@@ -45,6 +45,20 @@
             -webkit-tap-highlight-color: transparent;
         }
 
+        /* Memaksa semua kolom input, pilihan (select), dan textarea di panel guru selalu terbaca kontras tinggi */
+        #view-admin input, 
+        #view-admin select, 
+        #view-admin textarea,
+        #modal-admin-login input {
+            background-color: #1e293b !important; /* Slate 800 */
+            color: #f8fafc !important; /* Slate 50 */
+            border-color: #475569 !important; /* Slate 600 */
+        }
+        #view-admin input::placeholder,
+        #modal-admin-login input::placeholder {
+            color: #94a3b8 !important; /* Slate 400 */
+        }
+
         /* Tombol 3D Menggemaskan Khas Game Anak */
         .btn-3d {
             transition: all 0.1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
