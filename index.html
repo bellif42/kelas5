@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Bintang Kelas - SDN 4 Rambutan</title>
+    <title>Bintang Kelas - SDN 2 Rambutan</title>
     
     <!-- Pustaka Font & Icon modern untuk anak-anak -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
@@ -117,7 +117,7 @@
                 </div>
                 <h1 class="text-2xl font-black text-kebaikan-dark tracking-wide drop-shadow-sm text-center" id="pub-app-title">Bintang Kelas</h1>
                 <p class="text-[10px] font-extrabold text-gray-500 bg-white border border-sky-200 px-3 py-1 rounded-full mt-1 uppercase tracking-widest" id="pub-class-badge">Karakter Hebat Kelas 5</p>
-                <p class="text-xs font-bold text-gray-400 mt-1" id="pub-school-name">SDN 4 Rambutan</p>
+                <p class="text-xs font-bold text-gray-400 mt-1" id="pub-school-name">SDN 2 Rambutan</p>
             </div>
 
             <!-- Formulir Pencarian Nama Siswa -->
@@ -390,7 +390,7 @@
                     </div>
                     <div>
                         <h2 class="font-black text-sm text-yellow-200" id="adm-display-teacher">Ruang Kerja Pak Guru</h2>
-                        <span class="text-[9px] text-white/80 font-bold uppercase tracking-wider" id="adm-display-school">SDN 4 Rambutan - KELAS 5</span>
+                        <span class="text-[9px] text-white/80 font-bold uppercase tracking-wider" id="adm-display-school">SDN 2 Rambutan - KELAS 5</span>
                     </div>
                 </div>
                 <div class="flex items-center gap-2">
@@ -623,7 +623,7 @@
         let kasAlerts = {}; 
         
         let appSettings = {
-            school_name: "SDN 4 Rambutan",
+            school_name: "SDN 2 Rambutan",
             class_name: "Kelas 5",
             guru_name: "Bella Lifia, S.Pd.",
             guru_nip: "19940812 202012 2 012",
@@ -1613,11 +1613,11 @@
         function updateDynamicSchoolIdentity() {
             document.getElementById('pub-app-title').innerText = appSettings.school_name || "Bintang Kelas";
             document.getElementById('pub-class-badge').innerText = `Karakter Hebat ${appSettings.class_name || 'Kelas 5'}`;
-            document.getElementById('pub-school-name').innerText = appSettings.school_name || "SDN 4 Rambutan";
+            document.getElementById('pub-school-name').innerText = appSettings.school_name || "SDN 2 Rambutan";
             document.getElementById('pub-app-version').innerText = appSettings.app_version || "v2.6.0-Ocean";
 
             document.getElementById('adm-display-teacher').innerText = `Ruang Kerja ${appSettings.guru_name || 'Pak Guru'}`;
-            document.getElementById('adm-display-school').innerText = `${appSettings.school_name || 'SDN 4 Rambutan'} - ${appSettings.class_name || 'KELAS 5'}`;
+            document.getElementById('adm-display-school').innerText = `${appSettings.school_name || 'SDN 2 SDN 2 Rambutan'} - ${appSettings.class_name || 'KELAS 5'}`;
         }
 
         // MODUL: Pengelolaan Siswa (Admin)
@@ -3434,7 +3434,7 @@ function renderTabRapor(container) {
                     <div class="page page-break">
                         <div class="header">
                             <div class="title">RAPOR PERKEMBANGAN KARAKTER SISWA</div>
-                            <div class="subtitle">${(appSettings.school_name || "SD NEGERI 4 RAMBUTAN").toUpperCase()} - ${(appSettings.class_name || "KELAS 5").toUpperCase()}</div>
+                            <div class="subtitle">${(appSettings.school_name || "SD NEGERI 2 RAMBUTAN").toUpperCase()} - ${(appSettings.class_name || "KELAS 5").toUpperCase()}</div>
                         </div>
                         <table class="meta">
                             <tr><td width="25%"><b>Nama Siswa</b></td><td width="3%">:</td><td width="72%">${s.name}</td></tr>
@@ -3533,7 +3533,7 @@ function renderTabRapor(container) {
                     <div class="document-container">
                         <div class="kop-polos">
                             <div class="kop-title">REKAPITULASI PRESENSI BULANAN SISWA</div>
-                            <div class="kop-subtitle">${(appSettings.school_name || "SD NEGERI 4 RAMBUTAN").toUpperCase()} - ${(appSettings.class_name || "KELAS 5").toUpperCase()}</div>
+                            <div class="kop-subtitle">${(appSettings.school_name || "SD NEGERI 2 RAMBUTAN").toUpperCase()} - ${(appSettings.class_name || "KELAS 5").toUpperCase()}</div>
                             <div class="kop-subtitle" style="font-weight: normal; font-size: 11px;">Tanggal Cetak: ${new Date().toLocaleDateString('id-ID')}</div>
                         </div>
 
@@ -3632,7 +3632,7 @@ function renderTabRapor(container) {
                     <div class="document-container">
                         <div class="kop-polos">
                             <div class="kop-title">REKAPITULASI NILAI AKADEMIK RESMI</div>
-                            <div class="kop-subtitle">${(appSettings.school_name || "SD NEGERI 4 RAMBUTAN").toUpperCase()} - ${(appSettings.class_name || "KELAS 5").toUpperCase()}</div>
+                            <div class="kop-subtitle">${(appSettings.school_name || "SD NEGERI 2 RAMBUTAN").toUpperCase()} - ${(appSettings.class_name || "KELAS 5").toUpperCase()}</div>
                             <div class="kop-subtitle" style="font-weight: bold; font-size: 11px; margin-top:5px;">MATA PELAJARAN: ${selectedCat.toUpperCase()}</div>
                         </div>
 
@@ -3807,7 +3807,7 @@ function renderTabRapor(container) {
         let htmlContent = `
             <html>
             <head>
-                <title>Piagam Bintang Kelas - ${appSettings.school_name || "SDN 4 Rambutan"}</title>
+                <title>Piagam Bintang Kelas - ${appSettings.school_name || "SDN 2 Rambutan"}</title>
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
                 <style>
                     @page { size: portrait; margin: 0; }
